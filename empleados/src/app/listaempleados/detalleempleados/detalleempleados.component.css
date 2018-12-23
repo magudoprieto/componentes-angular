@@ -1,0 +1,7 @@
+.empleado{
+	width: 480;
+	margin:10px auto;
+	border: 2px dashed red;
+	text-align: left;
+	background-color: white;
+}

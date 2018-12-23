@@ -1,0 +1,19 @@
+<div class="contenedor">
+  <h1>CAJA REGISTRADORA</h1>
+  <div class="productos">
+    <section class="comida">
+      <h3>Platos de comida</h3>
+      <app-comida *ngFor="let c of arrComida" [com]="c" (rec)="recibirComida($event)"></app-comida>
+    </section>
+    <section class="bebida">
+      <h3>Bebidas</h3>
+      <app-bebida *ngFor="let b of arrBebida" [beb]="b" (roc)="recibirBebida($event)"></app-bebida>
+    </section>
+  </div><!--sustituir por componentes-->
+  <div class="lista">
+    <app-lista [platos]="platoRecibido"></app-lista>
+    
+  </div>
+  
+
+</div>

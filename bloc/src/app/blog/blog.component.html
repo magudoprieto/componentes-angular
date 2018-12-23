@@ -1,0 +1,17 @@
+  <h1>Blog de post</h1>  
+   <div>
+     <select (change)="onChange($event)">
+       <option value="all">Todos</option>
+       <option value="comedia">Comedia</option>
+       <option value="tecnologia">Tecnologia</option>
+       <option value="trabajo">Trabajo</option>
+     </select>
+   </div> 
+    <div *ngFor="let p of postPintado" class="caja">
+      <div class="datos"><h2>{{p.titulo}}</h2>
+      <p>{{p.texto}}</p>
+      <h4>{{p.autor}}</h4>
+      <p>{{p.fecha}}</p>
+      <p>{{p.categoria}}</p></div>
+      <div class="imagen"><img src="{{p.imagen}}"></div>
+    </div>

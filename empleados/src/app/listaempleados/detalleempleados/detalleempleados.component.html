@@ -1,0 +1,14 @@
+<div class="empleado">
+	<div class="imagen">
+		<img src="{{emple.imagen}}">
+	</div>
+	<div class="texto">
+		<h2>{{emple.nombre}}{{emple.apellidos}}</h2>
+		<p>{{emple.departamento}}</p>
+	</div>
+	<div class="estado">
+		{{emple.activo}}
+	
+	<button (click)="cambiarEstado($event)">Cambiar estado</button>
+	</div>
+</div>

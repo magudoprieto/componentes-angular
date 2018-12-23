@@ -1,0 +1,18 @@
+div{
+	width: 500px;
+	height: 400px;
+	margin:0px auto;
+	background-color: grey;
+	border-radius:10%;
+}
+
+div p{
+	font-size: 86px;
+	color:white;
+	text-align: center;
+	padding-top: 30%;
+}
+
+button {
+	margin-left:120px;
+}

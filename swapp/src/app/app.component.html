@@ -1,0 +1,6 @@
+<div class="planetas" *ngFor="let p of planetas" (click)="envioObjeto(p.url)">
+  <h2>{{p.name}}</h2>
+  <h5>{{p.climate}}</h5>
+  <p>{{p.orbital_period}}</p>
+  <p>{{p.terrain}}</p>
+</div>

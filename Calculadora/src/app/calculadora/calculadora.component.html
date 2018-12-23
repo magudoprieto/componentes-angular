@@ -1,0 +1,37 @@
+<div class="container bg-secondary m-auto p-3">
+	<div class="row">
+		<div class="col-12 mb-3">
+		<input id="numeros" type="text" name="numeros" value="{{resultado}}">
+		</div>
+	</div>
+
+	<div class="row mb-4 mx-auto">
+		<div class="col-4"><button class="teclas" (click)="handleClick(1)">1</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(2)">2</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(3)">3</button></div>
+	</div>
+	<div class="row mb-4 mx-auto">
+		<div class="col-4"><button class="teclas" (click)="handleClick(4)">4</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(5)">5</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(6)">6</button></div>
+	</div>
+	<div class="row mb-4 mx-auto">
+		<div class="col-4"><button class="teclas" (click)="handleClick(7)">7</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(8)">8</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(9)">9</button></div>
+	</div>
+	<div class="row mb-4 mx-auto">
+		<div class="col-4"><button class="teclas" (click)="handleClick('+')">+</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick(0)">0</button></div>
+		<div class="col-4"><button class="teclas" (click)="handleClick('-')">-</button></div>
+	</div>
+	<div class="row mb-4 mx-auto">
+			<div class="col-4"><button class="teclas" (click)="handleClick('*')">x</button></div>
+			<div class="col-4"><button class="teclas" (click)="handleClick('/')">/</button></div>
+			<div class="col-4"><button class="teclas" (click)="poneraCero()">C</button></div>
+		</div>
+	<div class="row mb-4">
+		<div class="col-12"><button id="igual" (click)="resolver()">=</button></div>
+	</div>
+
+</div>

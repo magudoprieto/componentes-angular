@@ -1,0 +1,9 @@
+.planetas{
+    margin:20px auto;
+    width: 500px;
+    height: 200px;
+    background-color: lightsalmon;
+    border: 10px solid green;
+    padding: 30px;
+    text-align: center;
+}

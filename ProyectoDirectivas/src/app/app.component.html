@@ -1,0 +1,14 @@
+
+<!--<input type="number" name="numeros" [(ngModel)]="tamanoFuente"/>-->
+
+<button (click)="modificarFuente(true)">Font +</button>
+
+<button (click)="modificarFuente(false)">Font -</button>
+<p [ngStyle]="estilosParrafo">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sint quas, totam fugiat, nulla neque, obcaecati nesciunt repudiandae optio assumenda, a asperiores esse blanditiis iure perferendis. Voluptatibus, laboriosam. Error, iure!
+</p>
+
+<div [ngClass]="{'color-fondo-rojo':cambioClase,'color-letra-verde': !cambioClase}">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, esse atque ipsa aperiam aliquid sapiente optio doloribus sint vitae quae, corporis nam. Delectus cum, doloribus sint autem optio tempore repudiandae.
+</div>
+<button (click)="handleClick()">Cambiar</button>

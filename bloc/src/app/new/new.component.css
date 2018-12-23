@@ -1,0 +1,10 @@
+.formulario{
+    width: 500px;
+    margin:0px auto;
+}
+
+input[type=text]{
+    margin:2px;
+    padding:5px;
+    
+}

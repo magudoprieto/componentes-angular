@@ -1,0 +1,25 @@
+<form
+[formGroup]="form" (submit)="envioFormulario()">
+  <input type="text" name="nombre" formControlName="nombre"/>
+  <div>
+    <p>{{form.controls.nombre.valid}}</p>
+  </div>
+  <div >
+    <p *ngIf="form.controls.nombre.errors?.minlength">El campo no tiene el tamaño mínimo</p>
+</div>
+  
+   
+  
+  
+  <input type="text" name="apellidos" formControlName="apellidos"/>
+  <input type="mail" name="mail" formControlName="email"/>
+  <input type="password" name="password" formControlName="password"/>
+  <div><input type="text" name="edad" formControlName="edad"></div>
+
+  <div class="error">
+    <p *ngIf="form.controls.edad.errors?.required && form.controls.edad.dirty">El campo edad es requerido</p>
+    <p *ngIf="form.controls.edad.errors?.pattern && form.controls.edad.dirty">El campo solo acepta numeros</p>
+  </div>
+
+  <input type="submit" value="Enviar" [disabled]="!form.valid"/>
+</form>

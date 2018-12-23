@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="row">
+		<div class="col-6 text-center">
+			<app-formulario (tareaEnviada)="agregarTarea($event)"></app-formulario>
+		</div>
+		<div class="col-6 text-center">
+			<app-lista [tareas]="arrTareas"></app-lista>
+		</div>
+	</div>
+</div>
+	

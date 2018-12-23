@@ -1,0 +1,43 @@
+<ol>
+	<li *ngFor="let e of episodios">
+		{{e.title}}
+	</li>
+
+
+</ol>
+<table>
+	<thead>
+		<tr>
+			<th>#num</th>
+			<th>Titulo</th>
+			<th>Director</th>
+			<th>Primero</th>
+			<th>Ultimo</th>
+			<th>Par</th>
+			<th>impar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let e of episodios; let i = index; let p = first; let u = last; let par = even; let impar = odd" [ngClass]="{'fila-par': par,'fila-impar': !par}">
+			<td>{{i+1}}</td>
+			<td>{{e.title}}</td>
+			<td>{{e.director}}</td>
+			<td>{{p}}</td>
+			<td>{{u}}</td>
+			<td>{{par}}</td>
+			<td>{{impar}}</td>
+		</tr>
+
+	</tbody>
+
+</table>
+
+<div *ngFor="let alum of alumnos">
+	{{alum.nombre}} {{alum.apellidos}}
+	<ul>
+		<li *ngFor="let asig of alum.asignaturas">
+			{{asig}}
+		</li>
+	</ul>
+
+</div>

@@ -1,0 +1,7 @@
+.productos{
+    margin:20px auto;
+    width: 500px;
+    padding: 15px;
+    background-color:grey;
+    border: 4px solid red;
+}

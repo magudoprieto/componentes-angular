@@ -1,0 +1,10 @@
+<div class="productos" *ngFor="let p of productos">
+  <p>{{p.id}}</p>
+  <p>{{p.name}}</p>
+  <p>{{p.categoria}}</p>
+  <p>{{p.description}}</p>
+  <p>{{p.price | currency:'EUR'}}</p>
+  <img src="{{p.image}}">
+  <button type="submit" (click)="comprarProducto()">Comprar</button>
+
+</div>

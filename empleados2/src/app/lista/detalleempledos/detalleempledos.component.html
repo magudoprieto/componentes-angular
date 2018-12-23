@@ -1,0 +1,14 @@
+<div class="empleado">
+
+	<h2>{{emple.nombre}} {{emple.apellidos}}</h2>
+	<p>Edad: {{emple.edad}}</p>
+	<p>{{emple.departamento}}</p>
+	<div >
+		<p *ngIf="emple.activo">Activo</p>
+		<p *ngIf="!emple.activo">De baja</p>
+	
+	</div>
+	<button (click)="cambiarEstado($event)">Cambiar</button>
+	
+</div>
+	

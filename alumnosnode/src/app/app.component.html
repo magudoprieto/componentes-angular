@@ -1,0 +1,23 @@
+<ul>
+  <li *ngFor="let alumno of alumnos" (click)="handleClick(alumno.id)">
+    {{alumno.nombre}}
+  </li>
+</ul>
+
+<hr>
+
+<form
+[formGroup]="formNewAlumno" (ngSubmit)="onSubmit()">
+
+  Nombre<input type="text" formControlName="nombre" >
+  matricula<input type="text" formControlName="matricula">
+  email<input type="text" formControlName="email">
+  nota<input type="text" formControlName="nota_media">
+  edad<input type="text" formControlName="edad">
+  colegio<input type="text" formControlName="id_escuelas">
+  cursos<input type="text" formControlName="fk_cursos">
+  fecha<input type="text" formControlName="fecha_nacimiento">
+  sexo<input type="text" formControlName="sexo">
+  <input type="submit" value="enviar">
+
+</form>

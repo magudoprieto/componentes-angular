@@ -1,0 +1,20 @@
+<div class="form_group">
+
+	<label for="exampleInputEmail1">Formulario</label>
+	<input type="text" class="form-control" id="inputTitulo" placeholder="titulo de la tarea" [(ngModel)]="titulo">
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="true" [(ngModel)]="completa">
+  <label class="form-check-label" for="exampleRadios1">
+   Completa
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="false" [(ngModel)]="tarea.completa">
+  <label class="form-check-label" for="exampleRadios2">
+    Incompleta
+  </label>
+</div>
+
+<input (click)="sendTodo()" type="submit" value="Guardar">

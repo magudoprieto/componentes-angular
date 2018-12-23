@@ -1,0 +1,9 @@
+<p>
+  Nombre<input type="text" name="nombre" [(ngModel)]="persona.nombre" />
+  Apellidos<input type="text" name="apellidos" [(ngModel)]="persona.apellidos" />
+  Direccion<input type="text" name="direccion" [(ngModel)]="persona.direccion" />
+</p>
+<button (click)="handler()">Enviar</button>
+<p>
+	{{persona | json}}
+</p>

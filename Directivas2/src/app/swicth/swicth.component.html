@@ -1,0 +1,11 @@
+Opcion1<input type="radio" name="opcion" value="opcion1" (change)="handleOnChange($event)"><br/>
+Opcion2<input type="radio" name="opcion" value="opcion2" (change)="handleOnChange($event)"><br/>
+Opcion3<input type="radio" name="opcion" value="opcion3" (change)="handleOnChange($event)"><br/>
+Opcion4<input type="radio" name="opcion" value="opcion4" (change)="handleOnChange($event)"><br/>
+
+<div [ngSwitch]="opcionSeleccionada">
+	<p *ngSwitchCase="'opcion1'">Se ha seleccionado la opción 1</p>
+	<p *ngSwitchCase="'opcion2'">Se ha seleccionado la opción 2</p>
+	<p *ngSwitchCase="'opcion3'">Se ha seleccionado la opción 3</p>
+	<p *ngSwitchDefault>Opcion no seleccionada</p>
+</div>

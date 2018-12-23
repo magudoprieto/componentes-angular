@@ -1,0 +1,19 @@
+.container{
+    max-width: 375px;
+    border:5px solid green;
+}
+
+.row div button{
+    width:70px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+#igual{
+    width: 100%;
+}
+
+input#numeros{
+    width: 100%!important;
+    height: 50px;
+}
