@@ -9,8 +9,8 @@ import { Tarea } from '../../model/tarea.model';
 export class FormularioComponent implements OnInit {
 
 	titulo: string;
-  completa: string;
-  tarea: Tarea //a la propiedad tarea le damos la forma del modelo. Por ello hemos importado la clase tarea
+  completa: boolean;
+  tarea: Tarea; //a la propiedad tarea le damos la forma del modelo. Por ello hemos importado la clase tarea
   
   @Output() tareaEnviada = new EventEmitter();
 
@@ -22,8 +22,10 @@ export class FormularioComponent implements OnInit {
   }
 
   sendTodo(){
-  	let bCompleta = (this.completa == 'true'? true:false);
+    
+  	
     let t = new Tarea(this.titulo, this.completa);
+    //console.log(this.titulo, this.completa); Se reciben los datos del formulario
     this.tareaEnviada.emit(t);
   }
 

@@ -10,19 +10,21 @@ export class MainComponent implements OnInit {
 
 	arrTareas: Tarea[];
 
-  constructor() { }
-
-  ngOnInit() {
-  	this.arrTareas = [
+  constructor() {
+    this.arrTareas = [
   		new Tarea('Sacar la basura',true),
   		new Tarea('pasear al perro',true),
   		new Tarea('poner la lavadora',false)
   	];
+   }
+
+  ngOnInit() {
+  	
 
   }
 
   agregarTarea(tareaRecibida){
-    
+    //console.log(this.arrTareas); Se reciben las tareas del componente hijo
     this.arrTareas.push(tareaRecibida);
   }
 

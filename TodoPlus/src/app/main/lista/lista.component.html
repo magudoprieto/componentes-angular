@@ -1,1 +1,4 @@
-<div>{{output}}</div>
+<div *ngFor="let t of tareas;let i = index">
+    <span>{{t.titulo}} , {{t.completa}}</span><button (click)="borrar(i)">Borrar</button>
+        
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { Tarea } from 'src/app/model/tarea.model';
 
 @Component({
   selector: 'app-lista',
@@ -7,11 +8,19 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
-@Input() arrHijo: any[];
+@Input() tareas: Tarea[];
 
-  constructor() { }
+
+  constructor() {
+   
+   }
 
   ngOnInit() {
+    console.log(this.tareas);
+  }
+
+  borrar(data:number){
+      this.tareas.splice(data,data+1);
   }
 
 }

@@ -1,10 +1,12 @@
 <div class="container">
+	<h2 class="text-center">Aplicación tareas</h2>
 	<div class="row">
-		<div class="col-6 text-center">
-			<app-formulario (tareaEnviada)="agregarTarea()"></app-formulario>
+		<div class="col-5 text-center border border-primary p-3 mx-2">
+			<app-formulario (tareaEnviada)="agregarTarea($event)"></app-formulario>
 		</div>
-		<div class="col-6 text-center">
+		<div class="col-5 text-center border border-success p-3 mx-2">
 			<app-lista [tareas]="arrTareas"></app-lista>
 		</div>
+		
 	</div>
 </div>
